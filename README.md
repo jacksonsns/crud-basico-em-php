@@ -1,5 +1,5 @@
-# Sistema básico para cadastro de Clientes
-Sistema de cadastro básico utilizando PHP7 e Materialize.
+# Cadastro de Clientes
+Sistema básico para cadastro de pessoas utilizando PHP7 e Materialize.
 
 <h2> Como utilizar </h2>
 
