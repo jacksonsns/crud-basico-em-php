@@ -1,5 +1,5 @@
 <?php
-    include_once 'head.php';
+    include_once 'header.php';
 ?>
 
     <div class="container" style="padding: 25px;">
@@ -8,29 +8,25 @@
                 <div class="row">
                     <div class="input-field col s6">
                         <input placeholder="Nome" id="nome" type="text" class="nome" name="nome">
-                        <label for="nome">Nome</label>
+                       
                     </div>
                     <div class="input-field col s6">
                         <input id="sobrenome" type="text" class="sobrenome" name="sobrenome">
-                        <label for="sobrenome">Sobrenome</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="cpf" type="text" class="cpfOuCnpj" name="cpf">
-                        <label for="cpf">CPF</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="email" type="email" class="email" name="email">
-                        <label for="email">Email</label>
                     </div>
                 </div>
                 <div class="row">
                     <div class="input-field col s12">
                         <input id="senha" type="password" class="senha" name="senha">
-                        <label for="senha">Senha</label>
                     </div>
                 </div>
                 <div class="row">
@@ -44,6 +40,5 @@
         </div>
     </div>
 
-<?php
-    include_once 'footer.php';
-?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.11/jquery.mask.min.js"></script>
+    <script type="text/javascript">$("#cpf").mask("000.000.000-00");</script>

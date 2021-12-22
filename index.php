@@ -1,5 +1,5 @@
 <?php
-include_once 'head.php';
+  include_once 'header.php';
 ?>
 <!-- Tabela de clientes -->
 <div class="row">
@@ -16,10 +16,10 @@ include_once 'head.php';
         </thead>
         <tbody>
           <?php
-          $dados = $pdo->prepare("SELECT * FROM clientes");
-          $dados->execute();
-          $item = $dados->fetchAll(PDO::FETCH_ASSOC);
-          foreach ($item as $info) :
+            $dados = $pdo->prepare("SELECT * FROM clientes");
+            $dados->execute();
+            $item = $dados->fetchAll(PDO::FETCH_ASSOC);
+            foreach ($item as $info) :
           ?>
 
             <tr>
@@ -65,5 +65,5 @@ include_once 'head.php';
     </div>
   </div>
 <?php
-include_once 'footer.php';
+  include_once 'footer.php';
 ?>
